@@ -177,7 +177,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
 <footer>
   <div class="wrap">
     <span>2026 EmmyteeCreative. Design that feels like you.</span>
-    <span>Ibadan, Nigeria</span>
+    <span>Ibadan, Nigeria &middot; <a href="https://www.instagram.com/emmanuellthinks/" target="_blank" rel="noopener">Instagram</a> &middot; <a href="https://www.linkedin.com/in/emmanuel-oreoluwa-a29aa1434/" target="_blank" rel="noopener">LinkedIn</a></span>
   </div>
 </footer>
 
@@ -379,6 +379,9 @@ function crumbs(list) {
 function waBlock() {
   return '<div class="cc"><span class="eyebrow">WhatsApp</span><span class="val" id="c-wa">09136481248</span><div class="row" style="gap:8px;margin-top:6px"><a class="btn" href="https://wa.me/2349136481248" target="_blank" rel="noopener">Chat on WhatsApp</a><button type="button" style="margin-top:0" data-copy="09136481248" data-target="c-wa">Copy</button></div></div>';
 }
+function socialBlock() {
+  return '<div class="cc"><span class="eyebrow">Social</span><span class="val">Instagram and LinkedIn</span><div class="row" style="gap:8px;margin-top:6px"><a class="btn" href="https://www.instagram.com/emmanuellthinks/" target="_blank" rel="noopener">Instagram</a><a class="btn ghost" href="https://www.linkedin.com/in/emmanuel-oreoluwa-a29aa1434/" target="_blank" rel="noopener">LinkedIn</a></div></div>';
+}
 function copyBlock(label, val, id) {
   return '<div class="cc"><span class="eyebrow">' + label + '</span><span class="val" id="' + id + '">' + val + '</span><button type="button" data-copy="' + val + '" data-target="' + id + '">Copy</button></div>';
 }
@@ -450,7 +453,7 @@ function pageAbout() {
 }
 function pageContact() {
   return '<div class="wrap"><div class="page-head" style="padding-top:48px"><span class="eyebrow">Contact</span><h1>Let us talk</h1><p>Tell me what you need, who it is for and when you need it. I will reply with ideas and a clear price.</p></div>' +
-    '<div class="contact-grid">' + copyBlock('Email', 'emmyteecreativeux@gmail.com', 'c-mail') + copyBlock('Alternative email', 'odediranoreoluwa@gmail.com', 'c-mail2') + waBlock() + copyBlock('Hotline', '09040837644', 'c-hot') +
+    '<div class="contact-grid">' + copyBlock('Email', 'emmyteecreativeux@gmail.com', 'c-mail') + copyBlock('Alternative email', 'odediranoreoluwa@gmail.com', 'c-mail2') + waBlock() + socialBlock() + copyBlock('Hotline', '09040837644', 'c-hot') +
     '<div class="cc"><span class="eyebrow">Based in</span><span class="val">Ibadan, Nigeria</span><span class="meta">Working with clients anywhere</span></div></div></div>';
 }
 
