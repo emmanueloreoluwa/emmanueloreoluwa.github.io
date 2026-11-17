@@ -235,7 +235,8 @@ var CATS = [
         desc: 'An ad for a handmade bag seller. A tall black flag shape holds three bag photos down the middle, with the logo, a short pitch, an Order Now tag and contact numbers on the left, and a model wearing a black bag on the right.', meta: '1080 by 1080' },
       { id: 'girl', title: 'International Day of the Girl Child', type: 'Social post', img: 'girl-child.jpg',
         desc: 'A soft pink awareness graphic. A schoolgirl stands in open hands with a pencil shaped tree growing behind her, under the line Help Her Grow, Let Her Bloom.', meta: '1080 by 1350' }
-    ] }
+    ] },
+  { id: 'photo', name: 'Photography', blurb: 'Candid photos from church services, shot and edited on my phone.', items: [] }
 ];
 
 /* Projects with real artwork. Each design shows an image from the images folder. */
@@ -333,6 +334,26 @@ var PROJECTS = [
         desc: 'A Happy New Month post for July. A huge white JULY headline sits behind a man on a sofa taking a bite of a wrap, with more wraps, fries and a bottle of cola on the table in front of him.', meta: 'Square post' },
       { id: 'nationwide', tag: 'concept', title: 'We Deliver Nationwide', type: 'Social post', img: 'qb-nationwide.jpg', ar: '900/900',
         desc: 'A nationwide delivery announcement. A big yellow headline, We Deliver Nationwide, sits over a red and orange gradient, with a 3D map pin and a branded delivery van below, plus an Order Now button and the website button.', meta: 'Square post' }
+    ] },
+  { id: 'lfcphotos', cat: 'photo', name: 'Service Moments at LFC Olorunsogo',
+    blurb: 'Candid worship and prayer portraits from a church service in Ibadan.',
+    long: 'Candid photos from the 2nd Pre-Shiloh Encounter Service at Living Faith Church Olorunsogo, Ibadan. I shot and edited all of them on my phone, looking for honest moments: prayer, joy, a smile and a mother with her baby. Warm yellow light, shallow depth and a light colour grade keep the set consistent, and each one carries the event strip at the bottom.',
+    facts: [['Church', 'Living Faith Church Olorunsogo'], ['Service', '2nd Pre-Shiloh Encounter Service'], ['Camera and edit', 'Phone']],
+    designs: [
+      { id: 'purple', title: 'A Quiet Moment', type: 'Photo', img: 'ph-purple.jpg', ar: '900/1200',
+        desc: 'A woman in a purple pleated top with her hands pressed together in prayer. Warm yellow canopy light and a soft blurred crowd keep all the focus on her face.', meta: 'Shot on phone' },
+      { id: 'green', title: 'Joy in Worship', type: 'Photo', img: 'ph-green.jpg', ar: '900/1200',
+        desc: 'A woman in a bright green print caught mid gesture and mid song, with golden window light behind her. The motion in her hands keeps it alive.', meta: 'Shot on phone' },
+      { id: 'podium', title: 'At the Podium', type: 'Photo', img: 'ph-podium.jpg', ar: '900/1200',
+        desc: 'A minister in a sky blue three piece suit speaking from a glass podium with a microphone and an open Bible, in front of the church emblem.', meta: 'Shot on phone' },
+      { id: 'glasses', title: 'Eyes Closed in Prayer', type: 'Photo', img: 'ph-glasses.jpg', ar: '900/1200',
+        desc: 'A woman in large glasses and a colourful jacket with one hand on her head, praying. The patterned window frame behind her adds depth.', meta: 'Shot on phone' },
+      { id: 'baby', title: 'Mother and Child', type: 'Photo', img: 'ph-baby.jpg', ar: '900/1200',
+        desc: 'A mother looks down at her baby in a white cap while another worshipper is softly blurred behind them.', meta: 'Shot on phone' },
+      { id: 'smile', title: 'Caught Smiling', type: 'Photo', img: 'ph-smile.jpg', ar: '900/1200',
+        desc: 'A man in a blue and white flower print shirt smiling at something off camera, with colourful clothes blurred in the background.', meta: 'Shot on phone' },
+      { id: 'stage', title: 'Walking the Stage', type: 'Photo', img: 'ph-stage.jpg', ar: '900/1200',
+        desc: 'A speaker in a grey suit walks across the red platform with a microphone, with the church emblem glowing on the wall behind him.', meta: 'Shot on phone' }
     ] }
 ];
 
@@ -469,7 +490,7 @@ function pageAbout() {
     '<div class="about"><div class="portrait"><img src="emmanuel.jpg" alt="Emmanuel, the designer behind EmmyteeCreative"></div><div class="txt">' +
     '<p>I am a multidisciplinary creative working across graphic design, visual design and UI/UX design from Ibadan, Nigeria. People know my work as EmmyteeCreative, and my tagline is Design that feels like you.</p>' +
     '<p>I like clean layouts, a warm palette and copy that sounds like a real person wrote it. Whether it is a brand, an app flow or a flyer for Sunday, I want the finished work to look sure of itself.</p>' +
-    '<ul class="skills"><li>Brand identity</li><li>Flyer and print design</li><li>Social media content</li><li>UI/UX design</li><li>Presentation design</li><li>Copywriting</li></ul>' +
+    '<ul class="skills"><li>Brand identity</li><li>Flyer and print design</li><li>Social media content</li><li>UI/UX design</li><li>Presentation design</li><li>Photography</li><li>Copywriting</li></ul>' +
     '<div class="row"><a class="btn" href="#work">See my work</a><a class="btn ghost" href="#contact">Contact me</a></div></div></div></div>';
 }
 function pageContact() {
